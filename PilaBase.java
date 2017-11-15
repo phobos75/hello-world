@@ -10,17 +10,12 @@ package stack;
 
 public class PilaBase {
 
-    private static final String INSERIMENTO_OK = "OK";
-    private static final String PILA_PIENA = "Impossibile inserire nuovi elementi, pila piena";
-    private static final String PILA_VUOTA = "Impossibile estrarre un elemento, pila vuota";
-
-    private int dimensione = 10;
     private int[] contenitore;
     private int index = 0;
-    private String messaggio = null;
+
 
     public PilaBase() {
-        contenitore = new int[10];
+        contenitore = new int[5];
     }
 
     public void aggiungiElemento(int valore) {
@@ -30,7 +25,7 @@ public class PilaBase {
         }
     }
 
-    public int richiamaElemento() {
+    public int rimuoviElemento() {
         int resp = 0;
         if (index > 0) {
             resp = contenitore[index];
@@ -39,5 +34,19 @@ public class PilaBase {
         } else {
             throw new IndexOutOfBoundsException("Stack empty");
         }
+    }
+
+    public static void main(String[] args) {
+        PilaBase pila = new PilaBase();
+        pila.aggiungiElemento(5);
+        pila.aggiungiElemento(6);
+        pila.aggiungiElemento(99);
+        pila.aggiungiElemento(2);
+        pila.aggiungiElemento(77);
+        pila.aggiungiElemento(0);
+
+        pila.rimuoviElemento();
+
+        System.exit(0);
     }
 }

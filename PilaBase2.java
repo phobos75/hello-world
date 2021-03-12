@@ -48,6 +48,7 @@ public class PilaBase2 {
 
         pila.rimuoviElemento();
 
+		System.out.println("elaborazione Terminata correttamente!");
         System.exit(0);
     }
 }

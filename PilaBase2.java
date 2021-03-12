@@ -19,6 +19,7 @@ public class PilaBase2 {
     }
 
     public void aggiungiElemento(int valore) {
+		if (! valore instanceof Integer) return;
         if (index < contenitore.length) {
             contenitore[index] = valore;
             index++;

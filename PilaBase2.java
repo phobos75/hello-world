@@ -14,7 +14,7 @@ public class PilaBase2 {
     private int index = 0;
 
 
-    public PilaBase() {
+    public PilaBase2() {
         contenitore = new int[5];
     }
 
@@ -48,6 +48,7 @@ public class PilaBase2 {
 
         pila.rimuoviElemento();
 
+		System.out.println("elaborazione Terminata correttamente!");
         System.exit(0);
     }
 }

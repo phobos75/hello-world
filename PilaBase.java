@@ -44,6 +44,7 @@ public class PilaBase {
         pila.aggiungiElemento(2);
         pila.aggiungiElemento(77);
         pila.aggiungiElemento(0);
+        pila.aggiungiElemento(88);
 
         pila.rimuoviElemento();
 

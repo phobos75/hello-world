@@ -53,4 +53,8 @@ public class PilaBase2 {
 		System.out.println("elaborazione Terminata correttamente!");
         System.exit(0);
     }
+
+	public static void sparacazzate(String appo) {
+		System.out.print("hello");
+	}
 }

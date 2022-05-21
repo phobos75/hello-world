@@ -23,12 +23,15 @@ public class PilaBase {
             contenitore[index] = valore;
             index++;
         }
+        else {
+            System.out.println("impossibile, contenitore pieno");
+        }
     }
 
     public int rimuoviElemento() {
         int resp = 0;
         if (index > 0) {
-            resp = contenitore[index];
+            resp = contenitore[index-1];
             index--;
             return resp;
         } else {
@@ -37,6 +40,7 @@ public class PilaBase {
     }
 
     public static void main(String[] args) {
+        System.out.println("hallo world");
         PilaBase pila = new PilaBase();
         pila.aggiungiElemento(5);
         pila.aggiungiElemento(6);
@@ -46,7 +50,7 @@ public class PilaBase {
         pila.aggiungiElemento(0);
         pila.aggiungiElemento(88);
 
-        pila.rimuoviElemento();
+        System.out.println(pila.rimuoviElemento());
 
         System.exit(0);
     }

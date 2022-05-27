@@ -41,6 +41,10 @@ public class PilaBase {
         }
     }
 
+    public void stampa(int val) {
+        System.out.println(String.valueOf(contenitore[val]));
+    }
+
     public static void main(String[] args) {
         System.out.println("hallo world");
         PilaBase pila = new PilaBase();
@@ -55,8 +59,8 @@ public class PilaBase {
         System.out.println(pila.rimuoviElemento());
         pila.rimuoviElemento();
         pila.aggiungiElemento(45);
-        Stream.of(pila);
-        
+        pila.stampa(3);
+
         System.exit(0);
     }
 }

@@ -8,6 +8,8 @@
 
 package stack;
 
+import java.util.stream.Stream;
+
 public class PilaBase {
 
     private int[] contenitore;
@@ -51,7 +53,10 @@ public class PilaBase {
         pila.aggiungiElemento(88);
 
         System.out.println(pila.rimuoviElemento());
-
+        pila.rimuoviElemento();
+        pila.aggiungiElemento(45);
+        Stream.of(pila);
+        
         System.exit(0);
     }
 }

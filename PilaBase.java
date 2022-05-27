@@ -8,6 +8,8 @@
 
 package stack;
 
+import java.util.stream.Stream;
+
 public class PilaBase {
 
     private int[] contenitore;
@@ -39,6 +41,10 @@ public class PilaBase {
         }
     }
 
+    public void stampa(int val) {
+        System.out.println(String.valueOf(contenitore[val]));
+    }
+
     public static void main(String[] args) {
         System.out.println("hallo world");
         PilaBase pila = new PilaBase();
@@ -51,6 +57,9 @@ public class PilaBase {
         pila.aggiungiElemento(88);
 
         System.out.println(pila.rimuoviElemento());
+        pila.rimuoviElemento();
+        pila.aggiungiElemento(45);
+        pila.stampa(3);
 
         System.exit(0);
     }

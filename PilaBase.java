@@ -10,6 +10,7 @@ package stack;
 
 import java.util.stream.Stream;
 
+// una semplice pila base
 public class PilaBase {
 
     private int[] contenitore;

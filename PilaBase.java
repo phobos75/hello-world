@@ -20,6 +20,10 @@ public class PilaBase {
         contenitore = new int[5];
     }
 
+    public String getVolumeOccupato() {
+        return String.valueOf(index + 1);
+    }
+
     public void aggiungiElemento(int valore) {
         if (index < contenitore.length) {
             contenitore[index] = valore;

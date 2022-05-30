@@ -19,7 +19,7 @@ public class PilaBase2 {
     }
 
     public void aggiungiElemento(int valore) {
-		if (! valore instanceof Integer) return;
+
         if (index < contenitore.length) {
             contenitore[index] = valore;
             index++;
@@ -37,6 +37,7 @@ public class PilaBase2 {
         }
     }
 
+    // anche su pila 2 il main per il debug
     public static void main(String[] args) {
         PilaBase pila = new PilaBase();
         pila.aggiungiElemento(5);

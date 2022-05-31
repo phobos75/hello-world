@@ -2,8 +2,6 @@
  * ******************************************************************
  *                  RBS 2017 - Java base: classe pila.
  * ******************************************************************
- * 
- * L'esempio che segue implementa una classe base che rappresenta u
  */
 
 package stack;

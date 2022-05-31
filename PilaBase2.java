@@ -8,6 +8,7 @@
 
 package stack;
 
+// commento sulla pila base 2
 public class PilaBase2 {
 
     private int[] contenitore;

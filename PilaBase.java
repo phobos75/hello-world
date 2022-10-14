@@ -17,6 +17,8 @@ public class PilaBase {
     public PilaBase() {
         contenitore = new int[5];
     }
+    
+    public void metodoStupido(){}
 
     public void aggiungiElemento(int valore) {
         if (index < contenitore.length) {

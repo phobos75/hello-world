@@ -54,7 +54,4 @@ public class PilaBase2 {
         System.exit(0);
     }
 
-	public static void sparacazzate(String appo) {
-		System.out.print("hello");
-	}
 }

@@ -52,6 +52,7 @@ public class PilaBase {
         pila.aggiungiElemento(0);
         pila.aggiungiElemento(88);
         pila.aggiungiElemento(44);
+        pila.aggiungiElemento(55);
 
         System.out.println(pila.rimuoviElemento());
 

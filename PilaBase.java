@@ -20,6 +20,8 @@ public class PilaBase {
     public PilaBase() {
         contenitore = new int[5];
     }
+    
+    public void metodoStupido(){}
 
     public String getVolumeOccupato() {
         return String.valueOf(index + 1);
@@ -65,6 +67,8 @@ public class PilaBase {
         pila.aggiungiElemento(77);
         pila.aggiungiElemento(0);
         pila.aggiungiElemento(88);
+        pila.aggiungiElemento(44);
+        pila.aggiungiElemento(55);
 
         System.out.println(pila.rimuoviElemento());
         pila.rimuoviElemento();

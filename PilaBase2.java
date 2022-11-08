@@ -2,12 +2,11 @@
  * ******************************************************************
  *                  RBS 2017 - Java base: classe pila.
  * ******************************************************************
- * 
- * L'esempio che segue implementa una classe base che rappresenta u
  */
 
 package stack;
 
+// commento sulla pila base 2
 public class PilaBase2 {
 
     private int[] contenitore;
@@ -19,7 +18,7 @@ public class PilaBase2 {
     }
 
     public void aggiungiElemento(int valore) {
-		if (! valore instanceof Integer) return;
+
         if (index < contenitore.length) {
             contenitore[index] = valore;
             index++;
@@ -37,6 +36,7 @@ public class PilaBase2 {
         }
     }
 
+    // anche su pila 2 il main per il debug
     public static void main(String[] args) {
         PilaBase pila = new PilaBase();
         pila.aggiungiElemento(5);
@@ -45,8 +45,9 @@ public class PilaBase2 {
         pila.aggiungiElemento(2);
         pila.aggiungiElemento(77);
         pila.aggiungiElemento(0);
-		pila.aggiungiElemento(888);
-		pila.aggiungiElemento(999);
+        pila.aggiungiElemento(888);
+        pila.aggiungiElemento(999);
+        pila.aggiungiElemento(777);
 		pila.aggiungiElemento(567);
 
         pila.rimuoviElemento();
@@ -55,7 +56,4 @@ public class PilaBase2 {
         System.exit(0);
     }
 
-	public static void sparacazzate(String appo) {
-		System.out.print("hello");
-	}
 }

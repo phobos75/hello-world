@@ -55,11 +55,16 @@ public class PilaBase {
     public void stampa(int val) {
         System.out.println(String.valueOf(contenitore[val]));
     }
-    
+
+    protected int getNFields() {
+        return this.getClass().getDeclaredFields().length;
+    }
+
     // metodo main per lanciare la classe in debug
     public static void main(String[] args) {
         System.out.println("hallo world");
         PilaBase pila = new PilaBase();
+        System.out.println(pila.getNFields());
         pila.aggiungiElemento(5);
         pila.aggiungiElemento(6);
         pila.aggiungiElemento(99);
